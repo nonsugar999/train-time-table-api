@@ -4,7 +4,9 @@ import * as cdk from 'aws-cdk-lib';
 import { TttapiInfraStack } from '../lib/tttapi-infra-stack';
 
 const app = new cdk.App();
+const projectName: string = "tttapi"
 new TttapiInfraStack(app, 'TttapiInfraStack', {
+  projectName: projectName,
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
